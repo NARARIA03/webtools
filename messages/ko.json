@@ -1,5 +1,43 @@
 {
-  "HomePage": {
-    "title": "안녕 세상!"
+  "MainPage": {
+    "categories": {
+      "developer": {
+        "value": "👨‍💻 개발자"
+      },
+      "text": {
+        "value": "📝 텍스트"
+      },
+      "daily": {
+        "value": "🔢 일상 계산기"
+      },
+      "image": {
+        "value": "🖼️ 이미지"
+      },
+      "emoticon": {
+        "value": "😀 이모티콘"
+      },
+      "test": {
+        "value": "📋 테스트"
+      },
+      "math": {
+        "value": "➗ 수학 계산기"
+      },
+      "lottery": {
+        "value": "🎲 추첨"
+      }
+    },
+    "newWebTool": "새로 추가된 웹 툴"
+  },
+  "WebToolsData": {
+    "base64EncodeDecode": {
+      "title": "Base64 인코더 / 디코더",
+      "explain": "텍스트를 Base64 형식으로 인코딩하거나, Base64 문자열을 디코딩 합니다.",
+      "category": "developer"
+    },
+    "countLetters": {
+      "title": "글자 수 세기",
+      "explain": "글자 수를 세줍니다.",
+      "category": "text"
+    }
   }
 }

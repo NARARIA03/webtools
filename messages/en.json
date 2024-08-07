@@ -1,5 +1,43 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "MainPage": {
+    "categories": {
+      "developer": {
+        "value": "👨‍💻 Developer"
+      },
+      "text": {
+        "value": "📝 Text"
+      },
+      "daily": {
+        "value": "🔢 Daily Calculator"
+      },
+      "image": {
+        "value": "🖼️ Image"
+      },
+      "emoticon": {
+        "value": "😀 Emoticons"
+      },
+      "test": {
+        "value": "📋 Test"
+      },
+      "math": {
+        "value": "➗ Math Calculator"
+      },
+      "lottery": {
+        "value": "🎲 Lottery"
+      }
+    },
+    "newWebTool": "Recently Added Web Tools"
+  },
+  "WebToolsData": {
+    "base64EncodeDecode": {
+      "title": "Base64 Encoder / Decoder",
+      "explain": "Encode text to Base64 format or decode Base64 strings.",
+      "category": "developer"
+    },
+    "countLetters": {
+      "title": "Letter Count",
+      "explain": "Counts the number of letters.",
+      "category": "text"
+    }
   }
 }
