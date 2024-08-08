@@ -1,17 +1,10 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { toolKeys } from "@/utils/webToolKeys";
 import RenderWebToolList from "@/components/renderWebToolList";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "WebTools - Utility Hub",
-  description:
-    "Discover a comprehensive collection of web and PC utilities designed to enhance your productivity and streamline your tasks.",
-};
-
-export default function MainPage() {
+export default function MainPage({ params }: { params: { locale: string } }) {
   const t = useTranslations("MainPage");
-  const locale = useLocale();
+  const locale = params.locale;
   const toolKeysName = toolKeys.map((value) => value.name);
 
   return (

@@ -1,18 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export const useRouterPath = () => {
   const pathName = usePathname();
-  const params = useSearchParams();
   const [path, setPath] = useState<string>("");
 
   useEffect(() => {
-    const url = `${pathName}?${params}`;
+    const url = `${pathName}`;
     if (path !== url) {
       setPath(url);
     }
-  }, [pathName, params]);
+  }, [pathName]);
   return path;
 };
