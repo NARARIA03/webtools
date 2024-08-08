@@ -16,7 +16,7 @@ export default function CategoryBar({ locale }: Props): React.JSX.Element {
           <li key={key} className="m-2">
             <Link
               className="block p-2 rounded-2xl bg-white hover:bg-secondary-color text-text-color hover:text-white hover:scale-[115%] transition-all"
-              href={`/${locale}/webtools?category=${key}`}
+              href={`/${locale}/${key}`}
             >
               {t(`categories.${key}.value`)}
             </Link>

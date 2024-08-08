@@ -1,14 +1,19 @@
 "use client";
 
 import RenderWebToolList from "@/components/renderWebToolList";
-import { toolKeys } from "@/utils/webToolKeys";
+import { categoryKeys, toolKeys } from "@/utils/webToolKeys";
 import { useLocale, useTranslations } from "next-intl";
-import { useSearchParams } from "next/navigation";
+import { notFound, usePathname } from "next/navigation";
 
 export default function CategoryPage(): React.JSX.Element {
-  const searchParams = useSearchParams();
-  // 쿼리 파라미터로 현재 주소에 적힌 카테고리값 가져오기
-  const thisCategory = searchParams.get("category");
+  const path = usePathname();
+  const pathParts = path.split("/");
+  const thisCategory = pathParts[2] ? pathParts[2] : "";
+
+  if (!categoryKeys.includes(thisCategory)) {
+    notFound();
+  }
+
   const locale = useLocale();
   const t = useTranslations("MainPage");
   const categoriedKeyName = toolKeys.filter((value) => value.category === thisCategory).map((value) => value.name);
