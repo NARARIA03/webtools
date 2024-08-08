@@ -1,7 +1,6 @@
-"use client";
-
 import { toolKeys } from "@/utils/webToolKeys";
 import Base64Component from "@/webtoolcomponent/base64/base64Component";
+import CountLettersComponent from "@/webtoolcomponent/countletters/countLettersComponent";
 import { notFound } from "next/navigation";
 
 export default function WebToolPage({ params }: { params: { locale: string; category: string; webtools: string } }): React.JSX.Element {
@@ -16,7 +15,8 @@ export default function WebToolPage({ params }: { params: { locale: string; cate
     <div className="w-full h-full min-h-screen bg-background-color">
       <div className="p-4 text-text-color flex flex-col justify-center ">
         <div>
-          <Base64Component />
+          {webtools === "base64EncodeDecode" && <Base64Component />}
+          {webtools === "countLetters" && <CountLettersComponent />}
         </div>
       </div>
     </div>
