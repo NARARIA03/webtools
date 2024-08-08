@@ -40,5 +40,8 @@
       "explain": "글자 수를 세줍니다.",
       "category": "text"
     }
+  },
+  "Base64EncodeDecodePage": {
+    "title": "Base64 인코더 / 디코더"
   }
 }

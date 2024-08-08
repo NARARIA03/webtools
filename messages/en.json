@@ -40,5 +40,8 @@
       "explain": "Counts the number of letters.",
       "category": "text"
     }
+  },
+  "Base64EncodeDecodePage": {
+    "title": "Base64 Encoder / Decoder"
   }
 }
