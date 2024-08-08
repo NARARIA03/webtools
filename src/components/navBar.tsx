@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LanguageSwitch from "./languageSwitch";
 
 export default function NavBar(): React.JSX.Element {
   return (
@@ -7,15 +8,7 @@ export default function NavBar(): React.JSX.Element {
         <Link href="/">
           <h1 className="font-bold text-xl text-white p-1">WebTools</h1>
         </Link>
-        <div className="flex bottom-0 gap-1">
-          <Link href="/ko" className="text-white p-1">
-            KOR
-          </Link>
-          <span className="text-white p-1">|</span>
-          <Link href="/en" className="text-white p-1">
-            ENG
-          </Link>
-        </div>
+        <LanguageSwitch />
       </nav>
     </div>
   );

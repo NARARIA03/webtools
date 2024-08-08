@@ -11,10 +11,10 @@
         "value": "🔢 Daily Calculator"
       },
       "image": {
-        "value": "🖼️ Image"
+        "value": "🖼️ Photo Editing / Retouching"
       },
-      "emoticon": {
-        "value": "😀 Emoticons"
+      "file": {
+        "value": "🔄 File Conversion"
       },
       "test": {
         "value": "📋 Test"
@@ -29,6 +29,7 @@
     "newWebTool": "Recently Added Web Tools"
   },
   "WebToolsData": {
+    "notFindWebtools": "The web tools are not available yet. Please wait a moment 😢",
     "base64EncodeDecode": {
       "title": "Base64 Encoder / Decoder",
       "explain": "Encode text to Base64 format or decode Base64 strings.",

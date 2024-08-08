@@ -11,10 +11,10 @@
         "value": "🔢 일상 계산기"
       },
       "image": {
-        "value": "🖼️ 이미지"
+        "value": "🖼️ 사진 편집 / 보정"
       },
-      "emoticon": {
-        "value": "😀 이모티콘"
+      "file": {
+        "value": "🔄 파일 변환"
       },
       "test": {
         "value": "📋 테스트"
@@ -29,6 +29,7 @@
     "newWebTool": "새로 추가된 웹 툴"
   },
   "WebToolsData": {
+    "notFindWebtools": "아직 웹툴이 준비되지 않았습니다. 잠시만 기다려주세요 😢",
     "base64EncodeDecode": {
       "title": "Base64 인코더 / 디코더",
       "explain": "텍스트를 Base64 형식으로 인코딩하거나, Base64 문자열을 디코딩 합니다.",
