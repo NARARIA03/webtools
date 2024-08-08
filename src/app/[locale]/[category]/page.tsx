@@ -1,5 +1,3 @@
-"use client";
-
 import RenderWebToolList from "@/components/renderWebToolList";
 import { categoryKeys, toolKeys } from "@/utils/webToolKeys";
 import { useTranslations } from "next-intl";
