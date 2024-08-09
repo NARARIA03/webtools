@@ -40,6 +40,11 @@
       "title": "글자 수 세기",
       "explain": "글자 수를 세줍니다.",
       "category": "text"
+    },
+    "bmiCalculator": {
+      "title": "BMI 계산기",
+      "explain": "BMI 수치를 계산해줍니다.",
+      "category": "daily"
     }
   },
 
@@ -151,5 +156,16 @@
         "3": "실시간으로 콘텐츠 길이에 대한 피드백을 제공하므로 손쉽게 편집 프로세스를 개선할 수 있습니다."
       }
     }
+  },
+
+  "bmiCalculator": {
+    "title": "BMI 계산기",
+    "description": "이 페이지는 BMI 수치를 빠르게 계산해주는 도구입니다. 아래 입력란을 채우면 BMI 수치를 계산해줍니다.",
+    "heightError": "키 입력이 잘못되었습니다. 다시 확인해주세요.",
+    "weightError": "몸무게 입력이 잘못되었습니다. 다시 확인해주세요.",
+    "input": "키-몸무게 입력",
+    "unit": "단위 선택",
+    "calculate": "BMI 계산하기",
+    "output": "결과"
   }
 }
