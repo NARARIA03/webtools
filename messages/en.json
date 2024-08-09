@@ -28,6 +28,7 @@
     },
     "newWebTool": "Recently Added Web Tools"
   },
+
   "WebToolsData": {
     "notFindWebtools": "The web tools are not available yet. Please wait a moment 😢",
     "base64EncodeDecode": {
@@ -39,8 +40,14 @@
       "title": "Letter Count",
       "explain": "Counts the number of letters.",
       "category": "text"
+    },
+    "bmiCalculator": {
+      "title": "BMI Calculator",
+      "explain": "Calculates your BMI value.",
+      "category": "daily"
     }
   },
+
   "base64EncodeDecode": {
     "title": "Base64 Encoder / Decoder",
     "description": "This page provides a tool for encoding text to Base64 and decoding Base64-encoded strings back to their original text. Enter your string in the input field above and click the buttons to see the transformation results.",
@@ -149,5 +156,14 @@
         "3": "Receive real-time feedback on text length, making it easier to enhance your editing process."
       }
     }
+  },
+
+  "bmiCalculator": {
+    "title": "BMI Calculator",
+    "description": "This page is a tool that quickly calculates your BMI value. Fill in the input fields below to calculate your BMI.",
+    "heightError": "Invalid height input. Please check and try again.",
+    "weightError": "Invalid weight input. Please check and try again.",
+    "input": "Input",
+    "output": "Result"
   }
 }

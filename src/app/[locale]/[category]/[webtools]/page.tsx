@@ -1,5 +1,6 @@
 import { toolKeys } from "@/utils/webToolKeys";
 import Base64Component from "@/webtoolcomponent/base64/base64Component";
+import BmiCalculatorComponent from "@/webtoolcomponent/bmi/bmiCalculatorComponent";
 import CountLettersComponent from "@/webtoolcomponent/countletters/countLettersComponent";
 import { notFound } from "next/navigation";
 
@@ -17,6 +18,7 @@ export default function WebToolPage({ params }: { params: { locale: string; cate
         <div>
           {webtools === "base64EncodeDecode" && <Base64Component />}
           {webtools === "countLetters" && <CountLettersComponent />}
+          {webtools === "bmiCalculator" && <BmiCalculatorComponent />}
         </div>
       </div>
     </div>
