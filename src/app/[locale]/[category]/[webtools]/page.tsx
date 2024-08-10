@@ -18,7 +18,7 @@ export default function WebToolPage({ params }: { params: { locale: string; cate
         <div>
           {webtools === "base64EncodeDecode" && <Base64Component />}
           {webtools === "countLetters" && <CountLettersComponent />}
-          {webtools === "bmiCalculator" && <BmiCalculatorComponent />}
+          {webtools === "bmiCalculator" && <BmiCalculatorComponent locale={locale} />}
         </div>
       </div>
     </div>
