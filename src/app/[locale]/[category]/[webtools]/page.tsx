@@ -13,7 +13,7 @@ export default function WebToolPage({ params }: { params: { locale: string; cate
   }
 
   return (
-    <div className="w-full h-full min-h-screen bg-background-color">
+    <main className="w-full h-full min-h-screen bg-background-color">
       <div className="p-4 text-text-color flex flex-col justify-center ">
         <div>
           {webtools === "base64EncodeDecode" && <Base64Component />}
@@ -21,6 +21,6 @@ export default function WebToolPage({ params }: { params: { locale: string; cate
           {webtools === "bmiCalculator" && <BmiCalculatorComponent locale={locale} />}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -13,13 +13,13 @@ export default function CategoryPage({ params }: { params: { locale: string; cat
   const categoriedKeyName = toolKeys.filter((value) => value.category === category).map((value) => value.name);
 
   return (
-    <div className="w-full h-full">
+    <main className="w-full h-full">
       <div className="p-4 text-text-color bg-background-color flex flex-col justify-center ">
         <div className="w-full max-w-4xl mt-2 mx-auto">
           <h2 className="text-lg">{t(`categories.${category}.value`)}</h2>
         </div>
         <RenderWebToolList toolKeys={categoriedKeyName} locale={locale} />
       </div>
-    </div>
+    </main>
   );
 }

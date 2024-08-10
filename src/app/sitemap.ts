@@ -134,5 +134,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
     },
+    {
+      url: "https://webtoolstack.com/daily/bmiCalculator",
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          ko: "https://webtoolstack.com/ko/daily/bmiCalculator",
+          en: "https://webtoolstack.com/en/daily/bmiCalculator",
+        },
+      },
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
   ];
 }

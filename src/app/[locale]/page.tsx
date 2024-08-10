@@ -8,13 +8,13 @@ export default function MainPage({ params }: { params: { locale: string } }) {
   const toolKeysName = toolKeys.map((value) => value.name);
 
   return (
-    <div className="w-full h-full">
+    <main className="w-full h-full">
       <div className="p-4 text-text-color bg-background-color flex flex-col justify-center ">
         <div className="w-full max-w-4xl mt-2 mx-auto">
           <h2 className="text-lg">{t("newWebTool")}</h2>
         </div>
         <RenderWebToolList locale={locale} toolKeys={toolKeysName} />
       </div>
-    </div>
+    </main>
   );
 }
