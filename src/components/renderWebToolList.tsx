@@ -1,9 +1,10 @@
+import { toolKeys } from "@/utils/webToolKeys";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 interface Props {
   locale: string;
-  toolKeys: string[];
+  toolKeys: (typeof toolKeys)[number]["name"][];
 }
 
 /**
@@ -22,7 +23,7 @@ export default function RenderWebToolList({ locale, toolKeys }: Props): React.JS
   } else {
     return (
       <ul className="min-h-screen py-4 flex flex-col justify-start items-center text-text-color">
-        {toolKeys.map((key: string) => {
+        {toolKeys.map((key) => {
           return (
             <li key={key} className="w-full max-w-4xl p-4 m-3 bg-white shadow-lg rounded-lg hover:scale-[103%] transition-all">
               <Link href={`/${locale}/${t(`${key}.category`)}/${key}`}>

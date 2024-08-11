@@ -3,7 +3,14 @@ import { categoryKeys, toolKeys } from "@/utils/webToolKeys";
 import { useTranslations } from "next-intl";
 import { notFound } from "next/navigation";
 
-export default function CategoryPage({ params }: { params: { locale: string; category: string } }): React.JSX.Element {
+interface Params {
+  params: {
+    locale: string;
+    category: (typeof categoryKeys)[number];
+  };
+}
+
+export default function CategoryPage({ params }: Params): React.JSX.Element {
   const { locale, category } = params;
   if (!categoryKeys.includes(category)) {
     notFound();

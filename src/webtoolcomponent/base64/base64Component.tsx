@@ -13,7 +13,7 @@ export default function Base64Component(): React.JSX.Element {
   const [inputError, setInputError] = useState<string>("");
   const t = useTranslations("base64EncodeDecode");
 
-  const handleError = (error: string) => {
+  const handleError = (error: "noInputError" | "encodingError" | "decodingError") => {
     setInputError(t(error));
     setTimeout(() => {
       setInputError("");
@@ -28,7 +28,7 @@ export default function Base64Component(): React.JSX.Element {
       }
       const utf8Bytes = encoder.encode(input);
       setOutput(btoa(String.fromCharCode(...Array.from(utf8Bytes))));
-    } catch (error) {
+    } catch (e) {
       handleError("encodingError");
     }
   };
@@ -50,7 +50,7 @@ export default function Base64Component(): React.JSX.Element {
       } else {
         setOutput(res.replaceAll("�", ""));
       }
-    } catch (error) {
+    } catch (e) {
       handleError("decodingError");
     }
   };

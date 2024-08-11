@@ -12,7 +12,7 @@ export default function BmiCalculatorComponent({ locale }: Props): React.JSX.Ele
   const t = useTranslations("bmiCalculator");
   const [unit, setUnit] = useState<"metric" | "imperial" | null>(null);
   const [bmi, setBmi] = useState<number | null>(null);
-  const [bmiRate, setBmiRate] = useState<number | null>(null);
+  const [bmiRate, setBmiRate] = useState<"1" | "2" | "3" | "4" | "5" | "6" | null>(null);
   const [height, setHeight] = useState<number | string>("");
   const [weight, setWeight] = useState<number | string>("");
   const [error, setError] = useState<string>("");
@@ -65,17 +65,17 @@ export default function BmiCalculatorComponent({ locale }: Props): React.JSX.Ele
   useEffect(() => {
     if (bmi !== null) {
       if (bmi < 18.5) {
-        setBmiRate(1);
+        setBmiRate("1");
       } else if (bmi < 25) {
-        setBmiRate(2);
+        setBmiRate("2");
       } else if (bmi < 30) {
-        setBmiRate(3);
+        setBmiRate("3");
       } else if (bmi < 35) {
-        setBmiRate(4);
+        setBmiRate("4");
       } else if (bmi < 40) {
-        setBmiRate(5);
+        setBmiRate("5");
       } else if (bmi >= 40) {
-        setBmiRate(6);
+        setBmiRate("6");
       }
     }
   }, [bmi]);
@@ -130,7 +130,7 @@ export default function BmiCalculatorComponent({ locale }: Props): React.JSX.Ele
         {t("calculate")}
       </button>
 
-      {bmi && (
+      {bmi && bmiRate && (
         <div className="mt-4">
           <p className="mt-2 ml-4 text-base font-semibold text-red-600">
             {t("result")}: {bmi.toFixed(2)}

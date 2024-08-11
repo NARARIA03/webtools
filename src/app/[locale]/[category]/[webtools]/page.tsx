@@ -1,10 +1,18 @@
-import { toolKeys } from "@/utils/webToolKeys";
+import { categoryKeys, toolKeys } from "@/utils/webToolKeys";
 import Base64Component from "@/webtoolcomponent/base64/base64Component";
 import BmiCalculatorComponent from "@/webtoolcomponent/bmi/bmiCalculatorComponent";
 import CountLettersComponent from "@/webtoolcomponent/countletters/countLettersComponent";
 import { notFound } from "next/navigation";
 
-export default function WebToolPage({ params }: { params: { locale: string; category: string; webtools: string } }): React.JSX.Element {
+interface Params {
+  params: {
+    locale: string;
+    category: (typeof categoryKeys)[number];
+    webtools: (typeof toolKeys)[number]["name"];
+  };
+}
+
+export default function WebToolPage({ params }: Params): React.JSX.Element {
   const { locale, category, webtools } = params;
   const toolNameList = toolKeys.map((value) => value.name);
 

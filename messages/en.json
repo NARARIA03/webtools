@@ -167,7 +167,7 @@
     "unit": "Select Unit",
     "calculate": "Calculate BMI",
     "result": "Your BMI Score",
-    "resultRate:": "Your BMI Category",
+    "resultRate": "Your BMI Category",
     "resultRateName": {
       "1": "Underweight",
       "2": "Normal",
