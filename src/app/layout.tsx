@@ -10,6 +10,7 @@ export const metadata: Metadata = {
       "naver-site-verification": [process.env.NEXT_PUBLIC_NAVERID || ""],
     },
   },
+  metadataBase: new URL("https://webtoolstack.com/"),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
