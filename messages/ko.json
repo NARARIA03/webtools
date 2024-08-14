@@ -58,7 +58,10 @@
     "output": "결과",
     "noInputError": "입력란이 비어있습니다. 확인해주세요.",
     "encodingError": "입력된 문자열이 Base64로 인코딩할 수 없거나, 문제가 있는 것 같아요.",
-    "decodingError": "입력된 텍스트가 Base64 형식이 아닌 것 같아요."
+    "decodingError": "입력된 텍스트가 Base64 형식이 아닌 것 같아요.",
+    "copyBtn": "결과 복사하기",
+    "copySuccess": "복사 완료!",
+    "copyError": "복사 실패. 다시 시도해 주세요."
   },
 
   "base64EncodeDecodeText": {

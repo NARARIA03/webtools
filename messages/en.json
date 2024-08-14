@@ -58,7 +58,10 @@
     "output": "Output",
     "noInputError": "The input field is empty. Please check and provide the necessary input.",
     "encodingError": "It seems the input cannot be encoded into Base64 or there's an issue with it.",
-    "decodingError": "It seems the input is not a valid Base64 string."
+    "decodingError": "It seems the input is not a valid Base64 string.",
+    "copyBtn": "Copy Result",
+    "copySuccess": "Copied successfully!",
+    "copyError": "Copy failed. Please try again."
   },
 
   "base64EncodeDecodeText": {

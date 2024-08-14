@@ -11,6 +11,7 @@ export default function Base64Component(): React.JSX.Element {
   const [input, setInput] = useState<string>("");
   const [output, setOutput] = useState<string>("");
   const [inputError, setInputError] = useState<string>("");
+  const [copySuccess, setCopySuccess] = useState<string>("");
   const t = useTranslations("base64EncodeDecode");
 
   const handleError = (error: "noInputError" | "encodingError" | "decodingError") => {
@@ -55,7 +56,23 @@ export default function Base64Component(): React.JSX.Element {
     }
   };
 
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(output);
+      setCopySuccess(t("copySuccess"));
+      setTimeout(() => {
+        setCopySuccess("");
+      }, 2500);
+    } catch (e) {
+      setCopySuccess(t("copyError"));
+      setTimeout(() => {
+        setCopySuccess("");
+      }, 2500);
+    }
+  };
+
   const errorStyle = inputError === "" ? "border-2 border-green-600" : "border-2 border-red-600";
+  const copyStyle = copySuccess === t("copySuccess") ? "text-green-600" : "text-red-600";
 
   return (
     <div className="p-4 text-text-color flex flex-col justify-center">
@@ -84,6 +101,10 @@ export default function Base64Component(): React.JSX.Element {
         </div>
         <h2 className="mt-2 mb-4 text-xl font-semibold">{t("output")}</h2>
         <textarea value={output} readOnly rows={5} cols={50} className="p-2 rounded-2xl shadow-lg" />
+        <button onClick={handleCopy} className="mt-8 p-2 bg-primary-color text-white rounded-2xl shadow-lg">
+          {t("copyBtn")}
+        </button>
+        <p className={`mt-2 ml-4 text-base font-semibold ${copyStyle}`}>{copySuccess}</p>
       </div>
       <div className="max-w-4xl w-full mt-2 mx-auto p-4 text-text-color flex flex-col justify-center">
         <TextComponent />
