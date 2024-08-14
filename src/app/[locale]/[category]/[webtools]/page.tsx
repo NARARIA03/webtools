@@ -14,9 +14,13 @@ interface Params {
 
 export default function WebToolPage({ params }: Params): React.JSX.Element {
   const { locale, category, webtools } = params;
-  const toolNameList = toolKeys.map((value) => value.name);
 
-  if (!toolNameList.includes(webtools)) {
+  const isValidPath = (category: string, webtools: string): boolean => {
+    return toolKeys.some((tool) => tool.category === category && tool.name === webtools);
+  };
+
+  const validPath = isValidPath(category, webtools);
+  if (!validPath) {
     notFound();
   }
 
@@ -24,9 +28,9 @@ export default function WebToolPage({ params }: Params): React.JSX.Element {
     <main className="w-full h-full min-h-screen bg-background-color">
       <div className="p-4 text-text-color flex flex-col justify-center ">
         <div>
-          {category === "developer" && webtools === "base64EncodeDecode" && <Base64Component />}
-          {category === "text" && webtools === "countLetters" && <CountLettersComponent />}
-          {category === "daily" && webtools === "bmiCalculator" && <BmiCalculatorComponent locale={locale} />}
+          {webtools === "base64EncodeDecode" && <Base64Component />}
+          {webtools === "countLetters" && <CountLettersComponent />}
+          {webtools === "bmiCalculator" && <BmiCalculatorComponent locale={locale} />}
         </div>
       </div>
     </main>
