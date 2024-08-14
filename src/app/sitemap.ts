@@ -158,5 +158,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
     },
+    {
+      url: "https://webtoolstack.com/developer/qrCodeGenerator",
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          ko: "https://webtoolstack.com/ko/developer/qrCodeGenerator",
+          en: "https://webtoolstack.com/en/developer/qrCodeGenerator",
+        },
+      },
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
   ];
 }
