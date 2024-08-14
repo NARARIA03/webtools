@@ -45,6 +45,11 @@
       "title": "BMI 계산기",
       "explain": "BMI 수치를 계산해줍니다.",
       "category": "daily"
+    },
+    "rgbHexConverter": {
+      "title": "RGB - Hex 변환기",
+      "explain": "RGB 값을 Hex 코드로 변환하거나, Hex 코드를 RGB 값으로 변환합니다.",
+      "category": "developer"
     }
   },
 
@@ -245,6 +250,63 @@
     "freeUsage": {
       "title": "무료 제공",
       "description": "이 도구는 전적으로 무료로 제공되며, 소프트웨어 다운로드 없이 웹 브라우저에서 직접 사용할 수 있습니다."
+    }
+  },
+
+  "rgbHexConverter": {
+    "title": "RGB/Hex 색상 변환기",
+    "description": "이 도구를 사용하여 RGB 값을 Hex 색상 코드로 변환하거나 그 반대로 변환할 수 있습니다.",
+    "inputPlaceholder": "RGB 값 또는 Hex 색상 코드를 입력하세요.\nRGB예시: RGB(255, 0, 0) / 255, 0, 0\nHex 예시: #FF0000 / ff0000 / f00",
+    "rgbToHexBtn": "RGB를 Hex로 변환",
+    "hexToRgbBtn": "Hex를 RGB로 변환",
+    "input": "입력",
+    "output": "결과",
+    "noInputError": "입력란이 비어있습니다. 확인해주세요.",
+    "invalidColorError": "유효하지 않은 색상 코드입니다. 확인해주세요.",
+    "copyBtn": "결과 복사하기",
+    "copySuccess": "복사 완료!",
+    "copyError": "복사 실패. 다시 시도해 주세요."
+  },
+
+  "rgbHexConverterText": {
+    "rgbToHex": {
+      "title": "RGB에서 Hex로 변환",
+      "description": "RGB 값을 16진수(Hex) 색상 코드로 변환하는 과정입니다.",
+      "steps": {
+        "1": "RGB 값을 0~255 범위의 세 가지 숫자로 입력합니다.",
+        "2": "각 숫자를 16진수로 변환합니다.",
+        "3": "세 가지 16진수 값을 결합하여 최종적인 Hex 코드를 얻습니다."
+      }
+    },
+    "hexToRgb": {
+      "title": "Hex에서 RGB로 변환",
+      "description": "16진수(Hex) 색상 코드를 RGB 값으로 변환하는 과정입니다.",
+      "steps": {
+        "1": "Hex 코드를 6자리 숫자 및 문자로 입력합니다.",
+        "2": "각 두 자리 숫자를 10진수로 변환합니다.",
+        "3": "변환된 세 가지 숫자를 결합하여 최종적인 RGB 값을 얻습니다."
+      }
+    },
+    "usageInstructions": {
+      "title": "사용 방법",
+      "steps": {
+        "1": "RGB 또는 Hex 색상 코드를 입력 영역에 입력합니다.",
+        "2": "변환 버튼을 클릭하여 결과를 확인합니다.",
+        "3": "결과 영역에서 변환된 값을 확인합니다.",
+        "4": "결과 복사 버튼을 클릭하여 클립보드에 복사할 수 있습니다."
+      }
+    },
+    "security": {
+      "title": "보안 사항",
+      "description": "입력된 텍스트 및 변환된 정보는 서버에 저장되지 않습니다."
+    },
+    "freeUsage": {
+      "title": "무료 제공",
+      "description": "이 도구는 무료로 제공되며, 추가 소프트웨어 설치 없이 웹에서 직접 사용할 수 있습니다."
+    },
+    "example": {
+      "title": "변환 예시",
+      "description": "예를 들어, RGB(255, 0, 0)는 #FF0000으로 변환되며, Hex 코드 #00FF00은 RGB(0, 255, 0)으로 변환됩니다."
     }
   }
 }

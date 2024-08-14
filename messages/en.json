@@ -45,6 +45,11 @@
       "title": "BMI Calculator",
       "explain": "Calculates your BMI value.",
       "category": "daily"
+    },
+    "rgbHexConverter": {
+      "title": "RGB - Hex Converter",
+      "explain": "Convert RGB values to Hex codes or vice versa.",
+      "category": "developer"
     }
   },
 
@@ -245,6 +250,63 @@
     "freeUsage": {
       "title": "Free to Use",
       "description": "This tool is available entirely for free and can be used directly from your web browser without the need for software downloads."
+    }
+  },
+
+  "rgbHexConverter": {
+    "title": "RGB/Hex Color Converter",
+    "description": "Use this tool to convert RGB values to Hex color codes or vice versa.",
+    "inputPlaceholder": "Enter RGB values or Hex color code.\nRGB example: RGB(255, 0, 0)\nHex example: #FF0000",
+    "rgbToHexBtn": "Convert RGB to Hex",
+    "hexToRgbBtn": "Convert Hex to RGB",
+    "input": "Input",
+    "output": "Output",
+    "noInputError": "The input field is empty. Please check and provide the necessary input.",
+    "invalidColorError": "Invalid color code. Please check and try again.",
+    "copyBtn": "Copy Result",
+    "copySuccess": "Copied successfully!",
+    "copyError": "Copy failed. Please try again."
+  },
+
+  "rgbHexConverterText": {
+    "rgbToHex": {
+      "title": "Convert RGB to Hex",
+      "description": "The process of converting RGB values into hexadecimal (Hex) color codes.",
+      "steps": {
+        "1": "Input three numbers representing RGB values in the range of 0 to 255.",
+        "2": "Convert each number to a hexadecimal value.",
+        "3": "Combine the three hexadecimal values to get the final Hex code."
+      }
+    },
+    "hexToRgb": {
+      "title": "Convert Hex to RGB",
+      "description": "The process of converting a hexadecimal (Hex) color code into RGB values.",
+      "steps": {
+        "1": "Input a Hex code consisting of 6 characters (numbers and letters).",
+        "2": "Convert each pair of characters to a decimal value.",
+        "3": "Combine the three resulting numbers to get the final RGB value."
+      }
+    },
+    "usageInstructions": {
+      "title": "Usage Instructions",
+      "steps": {
+        "1": "Enter an RGB or Hex color code in the input field.",
+        "2": "Click the convert button to see the result.",
+        "3": "Check the converted value in the result area.",
+        "4": "Click the copy button next to the result to copy it to the clipboard."
+      }
+    },
+    "security": {
+      "title": "Security Notice",
+      "description": "None of the entered text or converted information is stored on the server."
+    },
+    "freeUsage": {
+      "title": "Free to Use",
+      "description": "This tool is offered completely free of charge and can be used directly in the browser without downloading any software."
+    },
+    "example": {
+      "title": "Conversion Example",
+      "description": "For example, RGB(255, 0, 0) converts to #FF0000, and the Hex code #00FF00 converts to RGB(0, 255, 0)."
     }
   }
 }

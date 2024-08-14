@@ -2,6 +2,7 @@ import { categoryKeys, toolKeys } from "@/utils/webToolKeys";
 import Base64Component from "@/webtoolcomponent/base64/base64Component";
 import BmiCalculatorComponent from "@/webtoolcomponent/bmi/bmiCalculatorComponent";
 import CountLettersComponent from "@/webtoolcomponent/countletters/countLettersComponent";
+import RgbHexComponent from "@/webtoolcomponent/rbgHexConverter/rgbHexConvertComponent";
 import { notFound } from "next/navigation";
 
 interface Params {
@@ -31,6 +32,7 @@ export default function WebToolPage({ params }: Params): React.JSX.Element {
           {webtools === "base64EncodeDecode" && <Base64Component />}
           {webtools === "countLetters" && <CountLettersComponent />}
           {webtools === "bmiCalculator" && <BmiCalculatorComponent locale={locale} />}
+          {webtools === "rgbHexConverter" && <RgbHexComponent />}
         </div>
       </div>
     </main>

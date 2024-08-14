@@ -146,5 +146,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
     },
+    {
+      url: "https://webtoolstack.com/developer/rgbHexConverter",
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          ko: "https://webtoolstack.com/ko/developer/rgbHexConverter",
+          en: "https://webtoolstack.com/en/developer/rgbHexConverter",
+        },
+      },
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
   ];
 }
