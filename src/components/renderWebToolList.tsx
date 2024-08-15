@@ -25,12 +25,16 @@ export default function RenderWebToolList({ locale, toolKeys }: Props): React.JS
       <ul className="min-h-screen py-4 flex flex-col justify-start items-center text-text-color">
         {toolKeys.map((key) => {
           return (
-            <li key={key} className="w-full max-w-4xl p-4 m-3 bg-white shadow-lg rounded-lg hover:scale-[103%] transition-all">
-              <Link href={`/${locale}/${t(`${key}.category`)}/${key}`}>
+            <Link
+              href={`/${locale}/${t(`${key}.category`)}/${key}`}
+              key={key}
+              className="w-full max-w-4xl m-3 p-4 bg-white shadow-lg rounded-lg hover:scale-[103%] transition-all"
+            >
+              <li>
                 <p>{t(`${key}.title`)}</p>
                 <p className="text-xs">{t(`${key}.explain`)}</p>
-              </Link>
-            </li>
+              </li>
+            </Link>
           );
         })}
       </ul>
