@@ -8,7 +8,7 @@
     "description": "Enhance the readability of your source code by highlighting its syntax. You can download it as an image or easily share it.",
     "input": "Enter Source Code",
     "inputPlaceholder": "Paste or enter your source code here.",
-    "languageSelect": "Select/Search Programming Language",
+    "languageSelect": "Select / Search Programming Language",
     "output": "Highlighted Source Code",
     "isWrapLine": "Enable Line Wrapping",
     "isLineNumber": "Enable Line Numbers",

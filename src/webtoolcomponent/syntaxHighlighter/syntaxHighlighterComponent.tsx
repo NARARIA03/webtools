@@ -40,6 +40,7 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
           placeholder={t("languageSelect")}
           isSearchable
           instanceId={1}
+          className="shadow-lg"
         />
 
         <h2 className="mt-6 mb-4 text-xl font-semibold">{t("input")}</h2>
