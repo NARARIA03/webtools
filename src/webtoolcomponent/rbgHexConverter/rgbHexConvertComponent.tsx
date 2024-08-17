@@ -110,7 +110,10 @@ export default function RgbHexComponent(): React.JSX.Element {
         </div>
         <h2 className="mt-2 mb-4 text-xl font-semibold">{t("output")}</h2>
         <textarea value={output} readOnly rows={2} cols={50} className="p-2 rounded-2xl shadow-lg" />
-        <button onClick={handleCopy} className="mt-8 p-2 bg-primary-color text-white rounded-2xl shadow-lg">
+        <button
+          onClick={handleCopy}
+          className="mt-8 p-2 bg-primary-color hover:bg-secondary-color hover:scale-105 text-white rounded-2xl shadow-lg transition-all"
+        >
           {t("copyBtn")}
         </button>
         <p className={`mt-2 ml-4 text-base font-semibold ${copyStyle}`}>{copySuccess}</p>

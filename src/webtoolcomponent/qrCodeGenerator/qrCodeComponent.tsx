@@ -41,7 +41,10 @@ export default function QRCodeComponent(): React.JSX.Element {
         <div ref={qrDivRef}>
           <QRCodeCanvas value={input} size={256} level="H" includeMargin />
         </div>
-        <button onClick={handleDownload} className="mt-8 p-2 bg-primary-color text-white rounded-2xl shadow-lg">
+        <button
+          onClick={handleDownload}
+          className="mt-8 p-2 bg-primary-color hover:bg-secondary-color hover:scale-105 text-white rounded-2xl shadow-lg transition-all"
+        >
           {t("copyBtn")}
         </button>
       </div>
