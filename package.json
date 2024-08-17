@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@next/third-parties": "^14.2.5",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "next": "14.2.5",
     "next-intl": "^3.17.2",
     "qrcode.react": "^3.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",
