@@ -15,6 +15,7 @@ export default getRequestConfig(async ({ locale }) => {
   const BmiCalculator = await import(`../messages/${locale}/BmiCalculator.json`);
   const RgbHexConverter = await import(`../messages/${locale}/RgbHexConverter.json`);
   const QrCodeGenerator = await import(`../messages/${locale}/QrCodeGenerator.json`);
+  const SyntaxHighlighter = await import(`../messages/${locale}/SyntaxHighlighter.json`);
 
   return {
     messages: {
@@ -25,6 +26,7 @@ export default getRequestConfig(async ({ locale }) => {
       ...BmiCalculator,
       ...RgbHexConverter,
       ...QrCodeGenerator,
+      ...SyntaxHighlighter,
     },
   };
 });

@@ -1,0 +1,59 @@
+{
+  "syntaxHighlighter": {
+    "meta": {
+      "title": "Code Highlighter - WebTool Stack",
+      "description": "Enhance the readability of your source code and download or share it as an image."
+    },
+    "title": "Source Code Highlighter",
+    "description": "Enhance the readability of your source code by highlighting its syntax. You can download it as an image or easily share it.",
+    "input": "Enter Source Code",
+    "inputPlaceholder": "Paste or enter your source code here.",
+    "languageSelect": "Select/Search Programming Language",
+    "output": "Highlighted Source Code",
+    "isWrapLine": "Enable Line Wrapping",
+    "isLineNumber": "Enable Line Numbers",
+    "isDark": "Enable Dark Mode",
+    "saveBtn": "Save as Image",
+    "shareBtn": "Share"
+  },
+
+  "syntaxHighlighterText": {
+    "overview": {
+      "title": "Overview",
+      "description": "The 'Code Highlighter' is a powerful tool that enhances the readability of source code by highlighting its syntax for a wide range of programming languages. You can save the highlighted code as an image or easily share it. This tool helps programmers, technical writers, and educators make their code easier to read and understand."
+    },
+    "features": {
+      "title": "Key Features",
+      "steps": {
+        "1": "Support for Various Programming Languages: Not only popular languages like JavaScript, TypeScript, JSX, Python, Java, C#, C++, HTML, and CSS but also support for over 270 programming languages, both major and minor.",
+        "2": "Real-Time Syntax Highlighting: Your input code is automatically highlighted in real-time, allowing for immediate review.",
+        "3": "Theme Selection: Choose between light and dark themes to create a visually comfortable environment.",
+        "4": "User Customization: Customize the code display by enabling line numbers or allowing line wrapping.",
+        "5": "Save as Image: Save the highlighted code as a PNG file for easy inclusion in documents or presentations.",
+        "6": "Code Sharing: Easily share the highlighted code via social media or email."
+      }
+    },
+    "usageInstructions": {
+      "title": "How to Use",
+      "steps": {
+        "1": "Select Language: Choose the programming language from the dropdown menu.",
+        "2": "Enter Code: Paste or directly type the code you want to highlight into the text area.",
+        "3": "View Results: The entered code will be automatically highlighted, and you can see the result immediately.",
+        "4": "Save/Share: Click the 'Save as Image' button to download the result as an image file or click 'Share' to share the source code image."
+      }
+    },
+    "benefits": {
+      "title": "Benefits",
+      "steps": {
+        "1": "Improved Readability: Syntax highlighting with appropriate color schemes helps you quickly grasp the structure and meaning of the code.",
+        "2": "Educational Tool: It provides effective visual aids for explaining programming concepts, making it easier for learners to understand.",
+        "3": "Enhanced Documentation: Code snippets included in technical documentation or blog posts appear more professional and visually appealing.",
+        "4": "Collaboration Enhancement: Useful for emphasizing specific parts of the code when discussing with teammates."
+      }
+    },
+    "security": {
+      "title": "Security Information",
+      "description": "All code processing occurs on the client side, and no code is transmitted to the server. Therefore, you can safely use the tool even with sensitive code."
+    }
+  }
+}
