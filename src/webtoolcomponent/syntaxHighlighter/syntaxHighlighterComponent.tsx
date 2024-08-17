@@ -82,10 +82,10 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
           {input}
         </SyntaxHighlighter>
         <div className="flex justify-between items-center flex-wrap">
-          <button className="flex-1 mt-8 mx-4 p-2 bg-primary-color hover:bg-secondary-color text-white rounded-2xl shadow-lg transition-all">
+          <button className="flex-1 mt-8 mx-4 p-2 bg-primary-color hover:bg-secondary-color hover:scale-105 text-white rounded-2xl shadow-lg transition-all">
             {t("saveBtn")}
           </button>
-          <button className="flex-1 mt-8 mx-4 p-2 bg-primary-color hover:bg-secondary-color text-white rounded-2xl shadow-lg transition-all">
+          <button className="flex-1 mt-8 mx-4 p-2 bg-primary-color hover:bg-secondary-color hover:scale-105 text-white rounded-2xl shadow-lg transition-all">
             {t("shareBtn")}
           </button>
         </div>
