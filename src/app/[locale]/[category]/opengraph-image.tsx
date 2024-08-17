@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 // Image metadata
-export const alt = "Web Tool Stack";
+export const alt = "WebTool Stack - Category Image";
 export const size = {
   width: 1200,
   height: 630,

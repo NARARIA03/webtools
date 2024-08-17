@@ -1,0 +1,30 @@
+{
+  "WebToolsData": {
+    "notFindWebtools": "The web tools are not available yet. Please wait a moment 😢",
+    "base64EncodeDecode": {
+      "title": "Base64 Encoder / Decoder",
+      "explain": "Encode text to Base64 format or decode Base64 strings.",
+      "category": "developer"
+    },
+    "countLetters": {
+      "title": "Letter Count",
+      "explain": "Counts the number of letters.",
+      "category": "text"
+    },
+    "bmiCalculator": {
+      "title": "BMI Calculator",
+      "explain": "Calculates your BMI value.",
+      "category": "daily"
+    },
+    "rgbHexConverter": {
+      "title": "RGB - Hex Converter",
+      "explain": "Convert RGB values to Hex codes or vice versa.",
+      "category": "developer"
+    },
+    "qrCodeGenerator": {
+      "title": "QR Code Generator",
+      "explain": "Quickly convert URL or text into QR codes.",
+      "category": "developer"
+    }
+  }
+}

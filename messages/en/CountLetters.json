@@ -1,0 +1,60 @@
+{
+  "countLetters": {
+    "meta": {
+      "title": "Letter Counter - WebTool Stack",
+      "description": "Counts letters as you type and updates the count in real-time."
+    },
+    "title": "Letter Counter",
+    "description": "This page is a tool that counts the number of letters you input. Enter a sentence in the input field below, and it will count the letters in real-time.",
+    "inputPlaceholder": "Please enter a sentence to count the letters.",
+    "input": "Input",
+    "output": "Result",
+    "charCount": "Total Characters (including spaces)",
+    "charCountNoSpaces": "Total Characters (excluding spaces)",
+    "wordCount": "Total Words"
+  },
+
+  "countLettersText": {
+    "overview": {
+      "title": "Overview",
+      "description": "The 'Count Letters' tool is a simple yet powerful utility that calculates the number of characters, words, and spaces in the text you input, all in real time. Whether you're writing an essay, preparing a report, or tracking the character count for social media, this tool helps you monitor and optimize the length of your text as you type."
+    },
+    "features": {
+      "title": "Key Features",
+      "steps": {
+        "1": "Real-time Counting: Automatically updates the character, word, and space count as you type.",
+        "2": "Flexible Input: Easily paste or type text into the input area.",
+        "3": "Detailed Statistics: Displays character count including and excluding spaces, as well as the total word count separately.",
+        "4": "User-friendly Interface: Simple, intuitive, and clean layout for easy use."
+      }
+    },
+    "usageInstructions": {
+      "title": "How to Use",
+      "steps": {
+        "1": "Enter Text: Type or paste your text into the provided input area.",
+        "2": "Check the Count: The tool will automatically display the character count with and without spaces, as well as the total word count, in real time.",
+        "3": "Optimize Your Text: Adjust your text based on the provided counts to meet specific requirements."
+      }
+    },
+    "security": {
+      "title": "Security Notice",
+      "description": "All text input is processed locally in your browser. Your data is never sent to a server, ensuring that your text remains private and secure from any leaks or monitoring."
+    },
+    "freeUsage": {
+      "title": "Free to Use",
+      "description": "This tool is completely free to use and is accessible to everyone. You can use it directly in your web browser without the need to download any software."
+    },
+    "example": {
+      "title": "Example Usage",
+      "description": "For example, if you paste the sentence 'Hello World!' into the input area, this tool will count it as 12 characters including spaces, 11 characters excluding spaces, and 2 words."
+    },
+    "benefits": {
+      "title": "Benefits",
+      "steps": {
+        "1": "Maintain character limits to improve the quality of your writing.",
+        "2": "Adjust text to meet the specific requirements of social media, assignments, reports, or other formats.",
+        "3": "Receive real-time feedback on text length, making it easier to enhance your editing process."
+      }
+    }
+  }
+}

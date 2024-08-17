@@ -1,0 +1,92 @@
+{
+  "bmiCalculator": {
+    "meta": {
+      "title": "BMI Calculator - WebTool Stack",
+      "description": "A quick tool to calculate BMI and obesity levels based on your height and weight."
+    },
+    "title": "BMI Calculator",
+    "description": "This page is a tool for quickly calculating your BMI. Fill in the fields below to get your BMI score.",
+    "heightError": "Invalid height input. Please check and try again.",
+    "weightError": "Invalid weight input. Please check and try again.",
+    "input": "Height and Weight Input",
+    "unit": "Select Unit",
+    "calculate": "Calculate BMI",
+    "result": "Your BMI Score",
+    "resultRate": "Your BMI Category",
+    "resultRateName": {
+      "1": "Underweight",
+      "2": "Normal",
+      "3": "Overweight",
+      "4": "Obesity Class 1",
+      "5": "Obesity Class 2",
+      "6": "Obesity Class 3"
+    }
+  },
+
+  "bmiCalculatorText": {
+    "overview": {
+      "title": "Overview",
+      "description": "'BMI Calculator' is a simple yet powerful tool that quickly calculates your Body Mass Index (BMI) based on your height and weight. This tool helps you understand your body composition and manage your health, track weight loss, monitor fitness goals, and maintain a healthy lifestyle."
+    },
+    "overviewBmi": {
+      "title": "BMI Overview",
+      "description": "BMI (Body Mass Index) is a metric that evaluates whether an individual's weight falls within a healthy range based on their height and weight. Widely used globally, BMI provides a straightforward way to assess weight and health. The 'BMI Calculator' quickly computes BMI based on your height and weight."
+    },
+    "calculation": {
+      "title": "How BMI is Calculated",
+      "description": "BMI is calculated using the following formula: BMI = weight (kg) / (height (m) ^ 2). This formula helps assess whether an individual's weight falls within a healthy range."
+    },
+    "categories": {
+      "title": "BMI Categories",
+      "steps": {
+        "1": "Underweight: BMI < 18.5",
+        "2": "Normal weight: 18.5 ≤ BMI < 25",
+        "3": "Overweight: 25 ≤ BMI < 30",
+        "4": "Class 1 Obesity: 30 ≤ BMI < 35",
+        "5": "Class 2 Obesity: 35 ≤ BMI < 40",
+        "6": "Class 3 Obesity: BMI ≥ 40"
+      }
+    },
+    "usageInstructions": {
+      "title": "How to Use",
+      "steps": {
+        "1": "Enter Measurements: Input your height and weight in the provided fields. You can choose your preferred unit system (Metric / Imperial).",
+        "2": "Check Results: Click the 'Calculate BMI' button to see your BMI index and its classification.",
+        "3": "Optimize Health: Use the provided information to make health decisions, adjust your diet, exercise routine, and manage your well-being."
+      }
+    },
+    "advantages": {
+      "title": "Benefits of BMI",
+      "steps": {
+        "1": "Simplicity and Convenience: BMI is easy to calculate and requires only height and weight measurements.",
+        "2": "Utility in Large-Scale Studies: Effective for analyzing health issues at the population level.",
+        "3": "Relatively Accessible: A standardized metric that allows comparisons across different regions and ethnicities."
+      }
+    },
+    "limitations": {
+      "title": "Limitations of BMI",
+      "steps": {
+        "1": "Does Not Reflect Fat Distribution: BMI does not account for the distribution of body fat.",
+        "2": "Does Not Consider Age and Gender: BMI does not adjust for changes in body composition due to age or gender.",
+        "3": "Limited Health Assessment: BMI alone does not provide a complete assessment of health."
+      }
+    },
+    "alternativeMetrics": {
+      "title": "Alternative Metrics",
+      "steps": {
+        "1": "Body Fat Percentage: Represents the proportion of fat in your body weight.",
+        "2": "Waist Circumference: Useful for assessing abdominal fat accumulation.",
+        "3": "Waist-to-Hip Ratio: Evaluates fat distribution across the waist and hips.",
+        "4": "Adjusted BMI with Muscle Mass: A method to adjust BMI by considering muscle mass."
+      }
+    },
+    "security": {
+      "title": "Security",
+      "description": "All entered data is processed locally in your browser. No data is transmitted to servers, ensuring there is no risk of data leakage."
+    },
+    "freeUsage": {
+      "title": "Free to Use",
+      "description": "This tool is available entirely for free and can be used directly from your web browser without the need for software downloads."
+    }
+  }
+}

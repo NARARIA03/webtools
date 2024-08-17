@@ -1,0 +1,67 @@
+{
+  "MainPage": {
+    "categories": {
+      "developer": {
+        "value": "👨‍💻 Developer",
+        "meta": {
+          "title": "Developer Tools - WebTool Stack",
+          "description": "Web tools for encoding, color conversion, and code formatting."
+        }
+      },
+      "text": {
+        "value": "📝 Text",
+        "meta": {
+          "title": "Text Tools - WebTool Stack",
+          "description": "Web tools for word count, text conversion, and TTS download."
+        }
+      },
+      "daily": {
+        "value": "🔢 Daily Calculator",
+        "meta": {
+          "title": "Daily Calculators - WebTool Stack",
+          "description": "Tools for tax, BMI, and profit calculations."
+        }
+      },
+      "image": {
+        "value": "🖼️ Photo Editing / Retouching",
+        "meta": {
+          "title": "Photo Editing Tools - WebTool Stack",
+          "description": "Simple tools for photo editing, resolution, and compression."
+        }
+      },
+      "file": {
+        "value": "🔄 File Conversion",
+        "meta": {
+          "title": "File Conversion Tools - WebTool Stack",
+          "description": "Convert various file formats easily."
+        }
+      },
+      "test": {
+        "value": "📋 Test",
+        "meta": {
+          "title": "Test Tools - WebTool Stack",
+          "description": "Fortune and compatibility tests using MBTI, zodiac, and more."
+        }
+      },
+      "math": {
+        "value": "➗ Math Calculator",
+        "meta": {
+          "title": "Math Tools - WebTool Stack",
+          "description": "Calculators for algebra, calculus, and geometry."
+        }
+      },
+      "lottery": {
+        "value": "🎲 Lottery",
+        "meta": {
+          "title": "Lottery Tools - WebTool Stack",
+          "description": "Ladder game, coin toss, and draw lots tools."
+        }
+      }
+    },
+    "newWebTool": "Recently Added Web Tools",
+    "meta": {
+      "title": "Web Utility Hub - WebTool Stack",
+      "description": "Explore web tools for encoding, conversion, and calculations."
+    }
+  }
+}

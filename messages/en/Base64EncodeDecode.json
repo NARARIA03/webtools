@@ -1,0 +1,63 @@
+{
+  "base64EncodeDecode": {
+    "meta": {
+      "title": "Base64 Encoder / Decoder - WebTool Stack",
+      "description": "A tool to encode text to Base64 or decode Base64-encoded text back to its original form."
+    },
+    "title": "Base64 Encoder / Decoder",
+    "description": "This page provides a tool for encoding text to Base64 and decoding Base64-encoded strings back to their original text. Enter your string in the input field above and click the buttons to see the transformation results.",
+    "inputPlaceholder": "Enter the text to encode in Base64 or the Base64 string to decode.",
+    "encodeBtn": "Encode to Base64",
+    "decodeBtn": "Decode to Text",
+    "input": "Input",
+    "output": "Output",
+    "noInputError": "The input field is empty. Please check and provide the necessary input.",
+    "encodingError": "It seems the input cannot be encoded into Base64 or there's an issue with it.",
+    "decodingError": "It seems the input is not a valid Base64 string.",
+    "copyBtn": "Copy Result",
+    "copySuccess": "Copied successfully!",
+    "copyError": "Copy failed. Please try again."
+  },
+
+  "base64EncodeDecodeText": {
+    "base64Encoding": {
+      "title": "Base64 Encoding",
+      "description": "Base64 encoding is a method of converting binary data into a text format to maintain data integrity while transmitting. Base64 encoding uses 64 characters (A-Z, a-z, 0-9, +, /) to encode binary data into text.",
+      "steps": {
+        "1": "Input data is first divided into 8-bit bytes.",
+        "2": "These bytes are then grouped into 6-bit blocks. Each 6-bit block is converted to a character in the Base64 character set.",
+        "3": "The resulting Base64 string is padded with '=' characters if necessary to make the length a multiple of 4."
+      }
+    },
+    "base64Decoding": {
+      "title": "Base64 Decoding",
+      "description": "Base64 decoding is the process of converting a Base64-encoded string back into its original binary data to restore the original information.",
+      "steps": {
+        "1": "Remove '=' characters from the end of the Base64 string.",
+        "2": "Convert each Base64 character to its corresponding 6-bit value.",
+        "3": "Reconstruct the 8-bit bytes from these 6-bit values to restore the original binary data."
+      }
+    },
+    "usageInstructions": {
+      "title": "How to Use",
+      "steps": {
+        "1": "Text Input: Enter the string you want to encode in Base64 or the Base64 string you want to decode in the text input area.",
+        "2": "Encode / Decode: Click the 'Encode to Base64' / 'Decode to String' button to encode the string into Base64 or decode the Base64 string.",
+        "3": "Check Results: The converted result will be displayed in the output area.",
+        "4": "Copy Result: Click the copy button next to the output area to copy the result to your clipboard."
+      }
+    },
+    "security": {
+      "title": "Security",
+      "description": "All text entered and information related to encoding / decoding are not stored on the server."
+    },
+    "freeUsage": {
+      "title": "Free to Use",
+      "description": "This tool is provided completely free of charge. There is no need to download additional software; it can be used directly from the web."
+    },
+    "example": {
+      "title": "Encoding Example",
+      "description": "For example, the string 'Hello World' is converted to an ASCII byte sequence and then encoded in Base64, resulting in: SGVsbG8gV29ybGQ=."
+    }
+  }
+}

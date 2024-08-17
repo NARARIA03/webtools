@@ -1,11 +1,34 @@
 import { NextIntlClientProvider } from "next-intl";
+import { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import GoogleAdsense from "../adsenseComp";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import "../globals.css";
 import NavBar from "@/components/navBar";
 import CategoryBar from "@/components/categoryBar";
 import Footer from "@/components/footer";
+
+export const generateMetadata = async ({ params }: { params: { locale: string } }): Promise<Metadata> => {
+  const t = await getTranslations("MainPage");
+
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    metadataBase: new URL("https://webtoolstack.com/"),
+    verification: {
+      other: {
+        "naver-site-verification": [process.env.NEXT_PUBLIC_NAVERID || ""],
+      },
+    },
+    openGraph: {
+      type: "website",
+      url: `https://webtoolstack.com/${params.locale}`,
+      title: t("meta.title"),
+      description: t("meta.description"),
+      siteName: t("meta.title"),
+    },
+  };
+};
 
 export default async function LocaleLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string } }) {
   // Providing all messages to the client

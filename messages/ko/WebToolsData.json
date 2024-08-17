@@ -1,0 +1,30 @@
+{
+  "WebToolsData": {
+    "notFindWebtools": "아직 웹툴이 준비되지 않았습니다. 잠시만 기다려주세요 😢",
+    "base64EncodeDecode": {
+      "title": "Base64 인코더 / 디코더",
+      "explain": "텍스트를 Base64 형식으로 인코딩하거나, Base64 문자열을 디코딩 합니다.",
+      "category": "developer"
+    },
+    "countLetters": {
+      "title": "글자 수 세기",
+      "explain": "글자 수를 세줍니다.",
+      "category": "text"
+    },
+    "bmiCalculator": {
+      "title": "BMI 계산기",
+      "explain": "BMI 수치를 계산해줍니다.",
+      "category": "daily"
+    },
+    "rgbHexConverter": {
+      "title": "RGB - Hex 변환기",
+      "explain": "RGB 값을 Hex 코드로 변환하거나, Hex 코드를 RGB 값으로 변환합니다.",
+      "category": "developer"
+    },
+    "qrCodeGenerator": {
+      "title": "QR 코드 생성기",
+      "explain": "URL / 텍스트를 빠르게 QR코드로 변환합니다.",
+      "category": "developer"
+    }
+  }
+}

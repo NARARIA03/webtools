@@ -1,9 +1,20 @@
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 export const generateMetadata = async ({ params }: { params: { locale: string; category: string } }): Promise<Metadata> => {
+  const t = await getTranslations("MainPage");
+
   return {
-    title: `${params.category} tools - WebTool Stack`,
-    description: `Discover tools for ${params.category} tasks. Improve your ${params.category} processes and find solutions for your projects with our resources designed to enhance efficiency.`,
+    title: t(`categories.${params.category}.meta.title`),
+    description: t(`categories.${params.category}.meta.description`),
+    metadataBase: new URL("https://webtoolstack.com/"),
+    openGraph: {
+      type: "website",
+      url: `https://webtoolstack.com/${params.locale}/${params.category}`,
+      title: t(`categories.${params.category}.meta.title`),
+      description: t(`categories.${params.category}.meta.description`),
+      siteName: t(`categories.${params.category}.meta.title`),
+    },
   };
 };
 

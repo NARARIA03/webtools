@@ -1,0 +1,67 @@
+{
+  "MainPage": {
+    "categories": {
+      "developer": {
+        "value": "👨‍💻 개발자",
+        "meta": {
+          "title": "개발자 유틸리티 - WebTool Stack",
+          "description": "주로 인코더 / 디코더, 색상 변환, 코드 포매터와 같은 웹툴을 제공합니다."
+        }
+      },
+      "text": {
+        "value": "📝 텍스트",
+        "meta": {
+          "title": "텍스트 유틸리티 - WebTool Stack",
+          "description": "주로 글자 수 세기, 글자 변환, TTS 다운, 폰트 변환과 같은 웹툴을 제공합니다."
+        }
+      },
+      "daily": {
+        "value": "🔢 일상 계산기",
+        "meta": {
+          "title": "일상 계산 유틸리티 - WebTool Stack",
+          "description": "세금 계산, 수수료 계산, BMI 계산, 수익 계산과 같은 웹툴을 제공합니다."
+        }
+      },
+      "image": {
+        "value": "🖼️ 사진 편집 / 보정",
+        "meta": {
+          "title": "사진 편집 유틸리티 - WebTool Stack",
+          "description": "해상도 조절, 모자이크, 압축 등 간단한 사진 편집 / 보정 웹툴을 제공합니다."
+        }
+      },
+      "file": {
+        "value": "🔄 파일 변환",
+        "meta": {
+          "title": "파일 변환 유틸리티 - WebTool Stack",
+          "description": "다양한 파일들의 확장자를 변환하는 웹툴을 제공합니다."
+        }
+      },
+      "test": {
+        "value": "📋 테스트",
+        "meta": {
+          "title": "테스트 유틸리티 - WebTool Stack",
+          "description": "mbti, 혈액형, 이름, 별자리 등을 통해 운세나 궁합 등을 알려주는 웹툴을 제공합니다."
+        }
+      },
+      "math": {
+        "value": "➗ 수학 계산기",
+        "meta": {
+          "title": "수학 유틸리티 - WebTool Stack",
+          "description": "1차함수, 2차함수, 미적분, 피타고라스의 법칙 등 다양한 수학 계산을 도와주는 웹툴을 제공합니다."
+        }
+      },
+      "lottery": {
+        "value": "🎲 추첨",
+        "meta": {
+          "title": "추첨 유틸리티 - WebTool Stack",
+          "description": "사다리 타기, 동전 던지기, 제비뽑기 등 순서를 정하거나 벌칙 대상자를 선정할 때 사용하기 좋은 웹툴을 제공합니다."
+        }
+      }
+    },
+    "newWebTool": "새로 추가된 웹 툴",
+    "meta": {
+      "title": "웹 유틸리티 허브 - WebTool Stack",
+      "description": "인코더 / 디코더, 파일 변환, 수학 계산기, 글자 수 세기, QR 코드 생성과 같은 다양한 서비스를 만나보세요."
+    }
+  }
+}

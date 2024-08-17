@@ -1,0 +1,65 @@
+{
+  "qrCodeGenerator": {
+    "meta": {
+      "title": "QR Code Generator - WebTool Stack",
+      "description": "Quickly convert a URL or text into a QR code and download QR code."
+    },
+    "title": "QR Code Generator",
+    "description": "Use this tool to quickly convert URLs or text into QR codes.",
+    "inputLabel": "Enter URL / Text",
+    "inputPlaceholder": "Enter URL or text here.",
+    "outputLabel": "Generated QR Code",
+    "copyBtn": "Save QR Code"
+  },
+
+  "qrCodeGeneratorText": {
+    "usageInstructions": {
+      "title": "How to Use",
+      "steps": {
+        "1": "Enter your desired URL or text in the input area.",
+        "2": "The QR code will be generated automatically in real-time as you type.",
+        "3": "Click the 'Save QR Code' button to save the generated QR code as a PNG image.",
+        "4": "Use the saved QR code wherever you need it (business cards, posters, websites, etc.)."
+      }
+    },
+    "security": {
+      "title": "Security and Privacy",
+      "description": "We prioritize the protection of your personal information. All input data is processed solely on the client-side and is never stored or transmitted to any server. This ensures that your data remains secure and private."
+    },
+    "freeUsage": {
+      "title": "Free Service",
+      "description": "This QR code generator is provided completely free of charge. You can use it immediately without any software installation or registration. There are no usage limits, allowing you to generate high-quality QR codes as many times as you need."
+    },
+    "features": {
+      "title": "Key Features",
+      "steps": {
+        "1": "Real-time QR Code Generation: QR codes are created instantly as you type.",
+        "2": "High-Quality Images: Provides clear, easily scannable high-resolution QR codes.",
+        "3": "Versatile Input Support: Convert various data formats including URLs, plain text, and contact information into QR codes.",
+        "4": "User-Friendly Interface: Intuitive and easy-to-use design accessible to everyone.",
+        "5": "Instant Download: Download your generated QR codes immediately in PNG format."
+      }
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "description": "QR codes can be useful in various scenarios:",
+      "steps": {
+        "1": "Adding website links to business cards or promotional materials",
+        "2": "Linking online booking pages on event posters",
+        "3": "Providing links to detailed information pages on product packaging",
+        "4": "Connecting physical menus to online menus",
+        "5": "Sharing social media profiles",
+        "6": "Sharing Wi-Fi passwords"
+      }
+    },
+    "tips": {
+      "title": "QR Code Usage Tips",
+      "steps": {
+        "1": "Make sure the QR code is large enough for easy scanning.",
+        "2": "Use contrasting colors to improve readability.",
+        "3": "Regularly test your QR codes to ensure they're working properly.",
+        "4": "If necessary, add a brief explanation or call-to-action next to the QR code."
+      }
+    }
+  }
+}
