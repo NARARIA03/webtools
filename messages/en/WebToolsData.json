@@ -25,6 +25,11 @@
       "title": "QR Code Generator",
       "explain": "Quickly convert URL or text into QR codes.",
       "category": "developer"
+    },
+    "syntaxHighlighter": {
+      "title": "Code Syntax Highlighter",
+      "explain": "Highlights source code and lets you download it as an image.",
+      "category": "developer"
     }
   }
 }
