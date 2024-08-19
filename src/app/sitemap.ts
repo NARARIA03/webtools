@@ -170,5 +170,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
     },
+    {
+      url: "https://webtoolstack.com/developer/syntaxHighlighter",
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          ko: "https://webtoolstack.com/ko/developer/syntaxHighlighter",
+          en: "https://webtoolstack.com/en/developer/syntaxHighlighter",
+        },
+      },
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
   ];
 }
