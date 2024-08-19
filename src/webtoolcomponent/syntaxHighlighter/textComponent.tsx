@@ -14,7 +14,6 @@ export default function TextComponent() {
       <p className="text-sm mb-1">{t("features.steps.3")}</p>
       <p className="text-sm mb-1">{t("features.steps.4")}</p>
       <p className="text-sm mb-1">{t("features.steps.5")}</p>
-      <p className="text-sm mb-1">{t("features.steps.6")}</p>
 
       <h2 className="text-xl my-2 mt-6">{t("usageInstructions.title")}</h2>
       <p className="text-sm mb-1">1. {t("usageInstructions.steps.1")}</p>

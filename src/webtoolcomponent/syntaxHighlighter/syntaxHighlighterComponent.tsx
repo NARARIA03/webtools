@@ -13,10 +13,11 @@ type SelectOption = (typeof languageOptions)[0];
 
 export default function SyntaxHighlighterComponent(): React.JSX.Element {
   const [input, setInput] = useState<string>("");
-  const [language, setLanguage] = useState<SelectOption | null>(languageOptions[0]);
+  const [language, setLanguage] = useState<SelectOption | null>(null);
   const [isLineNumber, setIsLineNumber] = useState<boolean>(false);
   const [isWrapLine, setIsWrapLine] = useState<boolean>(false);
   const [isDark, setIsDark] = useState<boolean>(false);
+  const [saveImgAlert, setSaveImgAlert] = useState<string>("");
 
   // react-syntax-highlighter 라이브러리가 useRef를 지원 X.
   // useRef와 같이 가상DOM에 접근해서 조작을 하기 위해서 사용하는 편법, 새 pre 태그를 만들고, 여기에 ref를 붙여준다.
@@ -46,6 +47,10 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
    * @description 이미지로 저장 버튼 클릭 시 동작 함수
    */
   const handleSaveBtn = async () => {
+    if (input === "") {
+      handleSaveImgAlert("noInputError");
+      return;
+    }
     if (preRef.current) {
       try {
         const dataUrl = await domtoimage.toPng(preRef.current, {
@@ -54,13 +59,23 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
         });
         const link = document.createElement("a");
         link.href = dataUrl;
-        link.download = "code.png";
+        link.download = "webToolStack_Code.png";
         link.click();
+        handleSaveImgAlert("success");
       } catch (e) {
         console.error(e);
       }
     }
   };
+
+  const handleSaveImgAlert = (value: "noInputError" | "success") => {
+    setSaveImgAlert(t(value));
+    setTimeout(() => {
+      setSaveImgAlert("");
+    }, 2500);
+  };
+
+  const alertStyle = saveImgAlert === t("success") ? "text-green-600" : "text-red-600";
 
   return (
     <div className="p-4 text-text-color flex flex-col justify-center">
@@ -74,12 +89,11 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
           value={language}
           onChange={handleChangeLanguage}
           options={languageOptions}
-          placeholder={t("languageSelect")}
+          placeholder={t("languageSelectPlaceholder")}
           isSearchable
           instanceId={1}
           className="shadow-lg"
         />
-
         <h2 className="mt-6 mb-4 text-xl font-semibold">{t("input")}</h2>
         <textarea
           value={input}
@@ -89,7 +103,6 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
           cols={50}
           className="p-2 rounded-2xl shadow-lg"
         />
-
         <div className="w-full mt-12 mb-4 flex justify-between items-center flex-wrap">
           <h2 className=" text-xl font-semibold">{t("output")}</h2>
           <div className="flex flex-wrap">
@@ -107,7 +120,6 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
             </label>
           </div>
         </div>
-
         <SyntaxHighlighter
           language={language ? language.value : "javascript"}
           style={isDark ? oneDark : oneLight}
@@ -120,17 +132,13 @@ export default function SyntaxHighlighterComponent(): React.JSX.Element {
         >
           {input}
         </SyntaxHighlighter>
-        <div className="flex justify-between items-center flex-wrap">
-          <button
-            onClick={handleSaveBtn}
-            className="flex-1 mt-8 mx-4 p-2 bg-primary-color hover:bg-secondary-color hover:scale-105 text-white rounded-2xl shadow-lg transition-all"
-          >
-            {t("saveBtn")}
-          </button>
-          <button className="flex-1 mt-8 mx-4 p-2 bg-primary-color hover:bg-secondary-color hover:scale-105 text-white rounded-2xl shadow-lg transition-all">
-            {t("shareBtn")}
-          </button>
-        </div>
+        <button
+          onClick={handleSaveBtn}
+          className="flex-1 mt-8 p-2 bg-primary-color hover:bg-secondary-color hover:scale-105 text-white rounded-2xl shadow-lg transition-all"
+        >
+          {t("saveBtn")}
+        </button>
+        <p className={`${alertStyle} mt-2 ml-4 text-base font-semibold`}>{saveImgAlert}</p>
       </div>
       <div className="max-w-4xl w-full mt-2 mx-auto p-4 text-text-color flex flex-col justify-center">
         <TextComponent />
