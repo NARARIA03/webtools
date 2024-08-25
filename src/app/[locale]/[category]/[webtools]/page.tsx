@@ -4,6 +4,7 @@ import BmiCalculatorComponent from "@/webtoolcomponent/bmi/bmiCalculatorComponen
 import CountLettersComponent from "@/webtoolcomponent/countletters/countLettersComponent";
 import QRCodeComponent from "@/webtoolcomponent/qrCodeGenerator/qrCodeComponent";
 import RgbHexComponent from "@/webtoolcomponent/rbgHexConverter/rgbHexConvertComponent";
+import ReactionTimeComponent from "@/webtoolcomponent/reactionTime/reactionTimeComponent";
 import SyntaxHighlighterComponent from "@/webtoolcomponent/syntaxHighlighter/syntaxHighlighterComponent";
 import { notFound } from "next/navigation";
 
@@ -37,6 +38,7 @@ export default function WebToolPage({ params }: Params): React.JSX.Element {
           {webtools === "rgbHexConverter" && <RgbHexComponent />}
           {webtools === "qrCodeGenerator" && <QRCodeComponent />}
           {webtools === "syntaxHighlighter" && <SyntaxHighlighterComponent />}
+          {webtools === "reactionTimeTest" && <ReactionTimeComponent />}
         </div>
       </div>
     </main>

@@ -16,6 +16,7 @@ export default getRequestConfig(async ({ locale }) => {
   const RgbHexConverter = await import(`../messages/${locale}/RgbHexConverter.json`);
   const QrCodeGenerator = await import(`../messages/${locale}/QrCodeGenerator.json`);
   const SyntaxHighlighter = await import(`../messages/${locale}/SyntaxHighlighter.json`);
+  const ReactionTimeTest = await import(`../messages/${locale}/ReactionTimeTest.json`);
 
   return {
     messages: {
@@ -27,6 +28,7 @@ export default getRequestConfig(async ({ locale }) => {
       ...RgbHexConverter,
       ...QrCodeGenerator,
       ...SyntaxHighlighter,
+      ...ReactionTimeTest,
     },
   };
 });

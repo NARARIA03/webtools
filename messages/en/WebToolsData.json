@@ -30,6 +30,11 @@
       "title": "Code Syntax Highlighter",
       "explain": "Highlights source code and lets you download it as an image.",
       "category": "developer"
+    },
+    "reactionTimeTest": {
+      "title": "Reaction Time Test",
+      "explain": "Test your reaction speed.",
+      "category": "test"
     }
   }
 }

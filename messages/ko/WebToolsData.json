@@ -30,6 +30,11 @@
       "title": "소스 코드 하이라이터",
       "explain": "소스 코드를 문법에 맞게 하이라이팅하여 보기 좋게 만들어주며, 이를 이미지 파일로 다운로드할 수 있습니다.",
       "category": "developer"
+    },
+    "reactionTimeTest": {
+      "title": "반응속도 테스트",
+      "explain": "당신의 반응속도를 테스트해보세요.",
+      "category": "test"
     }
   }
 }

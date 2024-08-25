@@ -1,0 +1,80 @@
+{
+  "reactionTimeTest": {
+    "meta": {
+      "title": "Reaction Time Test - WebTool Stack",
+      "description": "Test your reaction time and see how quickly you respond."
+    },
+    "title": "Reaction Time Test",
+    "description": "Wait until the screen turns green, then click. See how fast your reaction is.",
+    "startBtn": "Click to start.",
+    "waiting": "Please wait...",
+    "clickNow": "Click now!",
+    "tooSoon": "Clicked too soon!",
+    "result": "Reaction time: {time}ms",
+    "percentile": "Your reaction time is in the top {percent}%."
+  },
+
+  "reactionTimeTestText": {
+    "howItWorks": {
+      "title": "How It Works",
+      "description": "This test accurately measures your reaction time to visual stimuli.",
+      "steps": {
+        "1": "Click the 'Click to start.' button, and the screen will turn red.",
+        "2": "After a random delay of 2 to 7 seconds, the screen will turn green.",
+        "3": "Click as quickly as possible when you see the green screen.",
+        "4": "Your reaction time will be displayed in milliseconds (ms)."
+      }
+    },
+    "ageAndReactionTime": {
+      "title": "Average Reaction Time by Age",
+      "description": "Typical reaction times by age group are as follows:",
+      "ageGroups": {
+        "1": "Teens: 200-250ms",
+        "2": "20s: 220-270ms",
+        "3": "30s: 230-280ms",
+        "4": "40s: 240-290ms",
+        "5": "50s and above: 250-320ms"
+      }
+    },
+    "interpretResults": {
+      "title": "Interpreting Results",
+      "description": "Approximate percentile scores based on your reaction time are as follows:",
+      "percentiles": {
+        "1": "150ms or less: Top 1%",
+        "2": "150-200ms: Top 10%",
+        "3": "200-250ms: Above average",
+        "4": "250-300ms: Average",
+        "5": "300ms or more: Below average"
+      }
+    },
+    "tips": {
+      "title": "Tips for Improving Performance",
+      "description": "Here are some tips to help improve your reaction time.",
+      "tipsList": {
+        "1": "Get plenty of sleep.",
+        "2": "Maintain overall health with regular exercise.",
+        "3": "Caffeine can temporarily enhance reaction time.",
+        "4": "Try meditation to improve focus.",
+        "5": "Video games may help improve reaction time."
+      }
+    },
+    "usageNotes": {
+      "title": "Usage Notes",
+      "notes": {
+        "1": "Try multiple attempts to get an average result. Single attempts may be influenced by chance.",
+        "2": "Clicking too early will display the message 'Clicked too soon!'.",
+        "3": "Minimize distractions in your environment during the test.",
+        "4": "Results may be less accurate on mobile devices due to touch delay."
+      }
+    },
+    "funFacts": {
+      "title": "Fun Facts",
+      "facts": {
+        "1": "The average human reaction time is about 250ms.",
+        "2": "F1 racing drivers have an average reaction time of around 100 to 150ms.",
+        "3": "Olympic sprinters' reaction times are typically between 120 and 160ms.",
+        "4": "Reaction time to sound is generally about 20 to 50ms faster than to visual stimuli."
+      }
+    }
+  }
+}
